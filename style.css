@@ -20,7 +20,7 @@ a:link {
 }
 
 a:visited {
-    color: #4CAF50;
+    color: #1089B2;
 }
 
 .header {
@@ -57,10 +57,6 @@ a:visited {
     border: 1px solid white;
 }
 
-
-  
-
-
 h1 {
     color: black;
     font-size: 24px; 
@@ -75,13 +71,30 @@ h2 {
     font-size: 24px;
 }
 
-.container {
-    width: 1024px;
-    margin: 0 auto; /*centers container?*/
-    line-height: 1.5;
+.content {
+    width: 50%;
+    display: inline-block;
+    margin-left: 20px;
+} 
+
+.profilepic {
+    height: 460px;
+    width: 460px;
+    margin-bottom: 25px;
+    background-image: url("profile.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 
+
+
+
+/* .container {
+    width: 1024px;
+    margin: 0 auto; /*centers container?*/
+    /* line-height: 1.5;
+} */ 
 
 #main-bio {
     float: left;
