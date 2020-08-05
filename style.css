@@ -16,11 +16,13 @@ body {
 
 a:link {
     color: #CD5C5C;
+    text-decoration: none;
 
 }
 
 a:visited {
     color: #1089B2;
+    text-decoration: none;
 }
 
 .header {
@@ -35,7 +37,6 @@ a:visited {
     font-size: 48px;
     color: #CD5C5C;
 }
-
 
 .header div {
     padding-top: 15px;
@@ -59,56 +60,44 @@ a:visited {
 
 h1 {
     color: black;
-    font-size: 24px; 
+    font-size: 30px; 
     margin: 20px;
     margin-bottom: 20px;
     padding: 10px 0;
     text-align: center;
-
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 20px;
+    margin-right: 20px;
+    text-align: center;
 }
 
 .content {
-    width: 50%;
+    width: 100%;
     display: inline-block;
     margin-left: 20px;
+    
 } 
 
-.profilepic {
+#profilepic {
     height: 460px;
     width: 460px;
     margin-bottom: 25px;
+    float: left;
     background-image: url("profile.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
-
-
-
-
-/* .container {
-    width: 1024px;
-    margin: 0 auto; /*centers container?*/
-    /* line-height: 1.5;
-} */ 
-
-#main-bio {
+#about {
     float: left;
-    width: 70%;
-}
-#contact-info {
-    float: left;
-    width: 30%;
+    padding: 20px;
+    margin: auto;
+    text-align: justify;
+    position: absolute;
+    width: 1000px;
+
+    /*Having problems keeping the paragraph in the same line as the profile pic. I have tried, overflow-wrap: break-word; clear: both; overflow: auto; */
+     /*What kiond of positioning? But how do I get it to center in remaining space on the page. One idea is to calculate total width, 100%, minus the 460px+20px, which is the profile pic width plus the content margin. With that calculation, I can set up the margins according to the remaining space.*/
+
 }
 
-#bio-image {
-    float: left;
-    width: 200px;
-    height: 200px;
-    margin: 25px;
-    margin-right: 20px;
-}
