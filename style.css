@@ -47,12 +47,12 @@ a:visited {
     color: #CD5C5C;
 }
 
-.header div ul {
+/* .header div ul {
     list-style-type: none;
-}
+} */
 
 /* adding the .dropdown class to position the button container*/
-.header div ul li .dropdown {
+.header div .dropdown { /*getting rid of ul and li to position buttons. ordinarily they go in here after header div*/
     display: inline-block;
     margin-left: 25px;
     padding: 14px;
