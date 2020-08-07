@@ -14,6 +14,11 @@ body {
     line-height: 150%;
 }
 
+p::first-letter {
+    font-size: 140%;
+}
+
+
 a:link {
     color: #CD5C5C;
     text-decoration: none;
@@ -94,10 +99,17 @@ h2 {
 
 .profilepic {
     width: 460px;
+    height: 460px;
     left: 20px;
+    margin: auto;
     position: absolute;
     float: left;
+    transition: .2s; /*Animation*/
     
+}
+
+.profilepic:hover {
+    transform: scale(1.5); 
 }
 
 .about {
@@ -109,9 +121,4 @@ h2 {
     position: absolute;
     width: 60%;
 
-    /*Having problems keeping the paragraph in the same line as the profile pic. I have tried, overflow-wrap: break-word; clear: both; overflow: auto; */
-     /*What kiond of positioning? But how do I get it to center in remaining space on the page. One idea is to calculate total width, 100%, minus the 460px+20px, which is the profile pic width plus the content margin. With that calculation, I can set up the margins according to the remaining space.*/
-
-}
-
-
+    /* Struggling with positioning the profile pic and about me text. It isn't responsive currently. */
