@@ -26,21 +26,21 @@ a:link {
 }
 
 a:visited {
-    color: #1089B2;
+    color: black;
     text-decoration: none;
 }
 
 .header {
     padding: 20px;
     font-family: 'Times New Roman','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #333333;
+    background-color: #F2B067;
     color: #ffffff;
 }
 
 .header h1 {
     display: inline-block;
     font-size: 48px;
-    color: #CD5C5C;
+    color: black;
 }
 
 .header div {
@@ -60,7 +60,7 @@ a:visited {
     display: inline-block;
     margin-left: 25px;
     padding: 14px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 

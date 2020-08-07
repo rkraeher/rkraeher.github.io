@@ -2,9 +2,13 @@
 <html>
 <head> 
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="reset.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" href="reset.css"> -->
     <link rel="stylesheet" type="text/css" href="style.css"> 
-    <title>Personal Homepage</title>
+    
+    <title>Homepage</title>
 </head>
 
 <body>
@@ -14,25 +18,82 @@
             <div>
             <ul>
                 <li>
-                    <a href="https://rkraeher.github.io/turtles/" target="_blank">Websites</a> <!--Drop down menus for this https://www.w3schools.com/css/css_dropdowns.asp-->
+                    <div class="dropdown"> <!--These buttons are not responsive. When I shrink the screen they drop out of the header-->
+                        <a class="btn btn-info dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Websites
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="https://rkraeher.github.io/turtles/" target="_blank">Turtles</a>
+                          <a class="dropdown-item" href="#">Another site</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
                 </li>
                 <li>
-                    <a href="https://github.com/rkraeher" target="_blank">Github</a>
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Github
+                        </a>
+    
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="https://github.com/rkraeher" target="_blank">Github</a>
+                        </div>
+                      </div>
                 </li>
                 <li>
-                    <a href="https://medium.com/@rudikraeher" target="_blank">Writing</a> <!--I want to do a drop down menus for this that includes Blog, KCET, -->
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Writing
+                        </a>
+                      
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="https://medium.com/@rudikraeher" target="_blank">Blog</a>
+                          <a class="dropdown-item" href="https://www.kcet.org/shows/artbound/soldadera-memory-machine" target="_blank">KCET</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
                 </li>
                 <li>
-                    <a href="https://futurismo.omeka.net/" target="_blank">Curation</a>
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Curation
+                        </a>
+                      
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="https://futurismo.omeka.net/" target="_blank">Alien Futures</a>
+                          <a class="dropdown-item" href="#">Another project</a>
+                        </div>
+                      </div>
                 </li>
                 <li>
-                    <a href="https://english.ucr.edu/gsea/profiles/rudi-kraeher/" target="_blank">Networks</a> <!--Drop down menus English Dept, LinkedIn-->
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Networks
+                        </a>
+                      
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="https://english.ucr.edu/gsea/profiles/rudi-kraeher/" target="_blank">UCR English</a>
+                          <a class="dropdown-item" href="#">LinkedIn</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
                 </li>
                 <li>
-                    <a href="#dropdown">Contact</a>
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Contact
+                        </a>
+                      
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#">Email</a>
+                          <a class="dropdown-item" href="#">Other contact info or forms</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
                 </li>
             </ul>
-        </div>
+            </div>
         </section>
         </header>
 
@@ -54,8 +115,12 @@
             
          </section>
     </section>
-    
     </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
 </body>
 </html>
 
